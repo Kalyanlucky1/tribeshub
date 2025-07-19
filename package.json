@@ -1,0 +1,20 @@
+{
+  "name": "tribeshub",
+  "version": "1.0.0",
+  "description": "A social platform for communities, events, and real-time chat with gamification",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["social", "community", "events", "chat", "gamification"],
+  "author": "TribesHub Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
